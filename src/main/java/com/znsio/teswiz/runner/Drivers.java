@@ -97,7 +97,12 @@ public class Drivers {
                                                                                forPlatform,
                                                                                context);
                 break;
-            case web:
+            case iOS:
+                currentDriver = AppiumDriverManager.createIOSDriverForUser(userPersona,
+                        forPlatform,
+                        context);
+                break;
+                case web:
                 currentDriver = BrowserDriverManager.createWebDriverForUser(userPersona,
                                                                             browserName,
                                                                             forPlatform, context);
